@@ -35,17 +35,13 @@ def commit_message(no_commit_msg = false)
   mesg.gsub(/'/, '') # Allow this to be handed off via -m '#{message}'
 end
 
-desc "Publish to http://developer.github.com"
+desc "Publish to http://docs2.lfe.io"
 task :publish, [:no_commit_msg] => [:clean, :remove_output_dir] do |t, args|
   mesg = commit_message(args[:no_commit_msg])
   sh "nanoc compile"
 
   # save precious files
-  if ENV['IS_HEROKU']
-    `git checkout origin/gh-pages`
-  else
-    `git checkout gh-pages`
-  end
+  `git checkout gh-pages`
   tmpdir = Dir.mktmpdir
   FileUtils.cp_r("enterprise", tmpdir)
   FileUtils.cp("robots.txt", tmpdir)
@@ -66,14 +62,7 @@ task :publish, [:no_commit_msg] => [:clean, :remove_output_dir] do |t, args|
     tsha = `git write-tree`.strip
     puts "Created tree   #{tsha}"
     # Heroku runs git@1.7, we don't have the luxury of -m
-    if ENV['IS_HEROKU']
-      `echo #{mesg} > changelog`
-      csha = `git commit-tree #{tsha} -p #{old_sha} < changelog`.strip
-    elsif old_sha.size == 40
-      csha = `git commit-tree #{tsha} -p #{old_sha} -m '#{mesg}'`.strip
-    else
-      csha = `git commit-tree #{tsha} -m '#{mesg}'`.strip
-    end
+    csha = `git commit-tree #{tsha} -m '#{mesg}'`.strip
     puts "Created commit #{csha}"
     puts `git show #{csha} --stat`
     puts "Updating gh-pages from #{old_sha}"
