@@ -8,3 +8,4 @@ crash.log
 /bin/
 /.bundle/
 static/search-index.json
+*.sw[po]
