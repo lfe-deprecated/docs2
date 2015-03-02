@@ -62,7 +62,8 @@ task :publish, [:no_commit_msg] => [:clean, :remove_output_dir] do |t, args|
     tsha = `git write-tree`.strip
     puts "Created tree   #{tsha}"
     # Heroku runs git@1.7, we don't have the luxury of -m
-    csha = `git commit-tree #{tsha} -m '#{mesg}'`.strip
+    `echo #{mesg} > changelog`
+    csha = `git commit-tree #{tsha} -p #{old_sha} < changelog`.strip
     puts "Created commit #{csha}"
     puts `git show #{csha} --stat`
     puts "Updating gh-pages from #{old_sha}"
