@@ -5,7 +5,70 @@ Documentation site. It was originally forked from the
 [repository](https://github.com/lfe/docs2) for the
 [Github Developer site](https://developer.github.com/).
 
-## Setup
+## Contributing to the Docs
+
+### Getting Set Up
+
+See the section "Static Site Generator" below.
+
+### Organization
+
+TBD
+
+### Styleguide
+
+Not sure how to structure the docs?  Here's what the structure of the
+API docs should look like:
+
+    # API title
+
+    * TOC
+    {:toc}
+
+    ## API endpoint title
+
+        [VERB] /path/to/endpoint
+
+    ### Parameters
+
+    Name | Type | Description
+    -----|------|--------------
+    `name`|`type` | Description.
+
+    ### Input (request JSON body)
+
+    Name | Type | Description
+    -----|------|--------------
+    `name`|`type` | Description.
+
+    ### Response
+
+    <%= headers 200, :pagination => default_pagination_rels, 'X-Custom-Header' => "value" %>
+    <%= json :resource_name %>
+
+**Note**: We're using [Kramdown Markdown extensions](http://kramdown.gettalong.org/syntax.html), such as definition lists.
+
+
+#### Terminal blocks
+
+You can specify terminal blocks with `pre.terminal` elements.  (It'd be nice if
+Markdown could do this more cleanly.)
+
+```html
+<pre class="terminal">
+$ curl foobar
+....
+</pre>
+```
+
+### Versioning Docs
+
+TBD
+
+
+## Static Site Generator
+
+### Setup
 
 Ruby 1.9 is required to build the site:
 
@@ -43,73 +106,8 @@ won't need to know much about nanoc.
 
 [nanoc]: http://nanoc.ws/
 
-## Styleguide
 
-Not sure how to structure the docs?  Here's what the structure of the
-API docs should look like:
-
-    # API title
-
-    * TOC
-    {:toc}
-
-    ## API endpoint title
-
-        [VERB] /path/to/endpoint
-
-    ### Parameters
-
-    Name | Type | Description
-    -----|------|--------------
-    `name`|`type` | Description.
-
-    ### Input (request JSON body)
-
-    Name | Type | Description
-    -----|------|--------------
-    `name`|`type` | Description.
-
-    ### Response
-
-    <%= headers 200, :pagination => default_pagination_rels, 'X-Custom-Header' => "value" %>
-    <%= json :resource_name %>
-
-**Note**: We're using [Kramdown Markdown extensions](http://kramdown.gettalong.org/syntax.html), such as definition lists.
-
-### JSON Responses
-
-We specify the JSON responses in Ruby so that we don't have to write
-them by hand all over the docs.  You can render the JSON for a resource
-like this:
-
-```erb
-<%= json :issue %>
-```
-
-This looks up `GitHub::Resources::ISSUE` in `lib/resources.rb`.
-
-Some actions return arrays.  You can modify the JSON by passing a block:
-
-```erb
-<%= json(:issue) { |hash| [hash] } %>
-```
-
-### Terminal blocks
-
-You can specify terminal blocks with `pre.terminal` elements.  (It'd be nice if
-Markdown could do this more cleanly.)
-
-```html
-<pre class="terminal">
-$ curl foobar
-....
-</pre>
-```
-
-This is not a `curl` tutorial though. Not every API call needs
-to show how to access it with `curl`.
-
-## Development
+### Development
 
 Nanoc compiles the site into static files living in `./output`.  It's
 smart enough not to try to compile unchanged files:
@@ -152,8 +150,9 @@ $ bundle exec nanoc autocompile
 This starts a web server too, so there's no need to run `nanoc view`.
 One thing: remember to add trailing slashes to all nanoc links!
 
-## Deploy
+### Deployment
 
 ```sh
 $ bundle exec rake publish
 ```
+
