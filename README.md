@@ -5,17 +5,34 @@ Documentation site. It was originally forked from the
 [repository](https://github.com/lfe/docs2) for the
 [Github Developer site](https://developer.github.com/).
 
-## Contributing to the Docs
 
-### Getting Set Up
+## Table of Contents
+
+* [Contributing to the Docs](#contributing-to-the-docs-)
+  * [Getting Set Up](#getting-set-up-)
+  * [Organization](#organization-)
+  * [Style Guide](#style-guide-)
+    * [Terminal Blocks](#terminal-blocks-)
+  * [Versioning Docs](#versioning-docs-)
+* [EUnit Compatibility](#eunit-compatibility-)
+* [Features](#features-)
+* [Static Site Generator](#static-site-generator-)
+  * [Setup](#setup-)
+  * [Development](#development-)
+  * [Deployment](#deployment-)
+
+
+## Contributing to the Docs [&#x219F;](#table-of-contents)
+
+### Getting Set Up [&#x219F;](#table-of-contents)
 
 See the section "Static Site Generator" below.
 
-### Organization
+### Organization [&#x219F;](#table-of-contents)
 
 TBD
 
-### Styleguide
+### Style Guide [&#x219F;](#table-of-contents)
 
 Not sure how to structure the docs?  Here's what the structure of the
 API docs should look like:
@@ -49,7 +66,7 @@ API docs should look like:
 **Note**: We're using [Kramdown Markdown extensions](http://kramdown.gettalong.org/syntax.html), such as definition lists.
 
 
-#### Terminal blocks
+#### Terminal Blocks [&#x219F;](#table-of-contents)
 
 You can specify terminal blocks with `pre.terminal` elements.  (It'd be nice if
 Markdown could do this more cleanly.)
@@ -61,14 +78,14 @@ $ curl foobar
 </pre>
 ```
 
-### Versioning Docs
+### Versioning Docs [&#x219F;](#table-of-contents)
 
 TBD
 
 
-## Static Site Generator
+## Static Site Generator [&#x219F;](#table-of-contents)
 
-### Setup
+### Setup [&#x219F;](#table-of-contents)
 
 Ruby 1.9 is required to build the site:
 
@@ -107,7 +124,7 @@ won't need to know much about nanoc.
 [nanoc]: http://nanoc.ws/
 
 
-### Development
+### Development [&#x219F;](#table-of-contents)
 
 Nanoc compiles the site into static files living in `./output`.  It's
 smart enough not to try to compile unchanged files:
@@ -150,7 +167,7 @@ $ bundle exec nanoc autocompile
 This starts a web server too, so there's no need to run `nanoc view`.
 One thing: remember to add trailing slashes to all nanoc links!
 
-### Deployment
+### Deployment [&#x219F;](#table-of-contents)
 
 ```sh
 $ bundle exec rake publish
