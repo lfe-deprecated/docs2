@@ -8,6 +8,7 @@ Documentation site. It was originally forked from the
 
 ## Table of Contents
 
+* [Background](#background-)
 * [Contributing to the Docs](#contributing-to-the-docs-)
   * [Getting Set Up](#getting-set-up-)
   * [Organization](#organization-)
@@ -19,6 +20,33 @@ Documentation site. It was originally forked from the
   * [Development](#development-)
   * [Deployment](#deployment-)
 
+
+## Background [&#x219F;](#table-of-contents)
+
+The LFE documentation site is due for an overhaul:
+ * it's hard for new-comers to find what they need
+ * it's missing crucial aspects like an officual tutorial
+ * too much information is presented
+ * the presentation is awkward and poorly organized
+
+The existing LFE documentation site has limitations that ultimately prevent it from being what users need:
+ * Jekyll doesn't have an out-of-the-box answer to API docs or large sites with complicated structures and contextual navigation menus
+ * Jekyll doesn't offer a way of providing versioned content (e.g., API/release versions)
+ * This is an opportunity to identify a project which has succeeded in this particular domain, and build upon their success -- [Github's developer site](https://developer.github.com/v3/) is a prime example of this sort of success.
+
+The new site aims to address these points. The following tickets are actively being incorporated into the "docs2" work:
+ * [Sketch out the IA for a docs site overhaul](https://github.com/lfe/docs/issues/49)
+ * [Figure out versioning for docs](https://github.com/lfe/docs/issues/38)
+ * [Identify good examples of API documentation](https://github.com/lfe/docs/issues/37)
+ * Related minor tickets:
+   * [Add useful context at the top of the docs page](https://github.com/lfe/docs/issues/41)
+   * [Update "Contributing" Section with New Dev On-Boarding](https://github.com/lfe/docs/issues/32)
+   * [Add more resources in the "Erlang" section](https://github.com/lfe/docs/issues/26)
+   * [Add style guide links in "Contributing" page](https://github.com/lfe/docs/issues/24)
+
+## Migration Plan
+
+Once the issues above are determined to be positively solved by this experimental work, we'll start transitioning content from the old docs to the new. When everything looks good, and folks are happy, we'll do the DNS dance.
 
 ## Contributing to the Docs [&#x219F;](#table-of-contents)
 
