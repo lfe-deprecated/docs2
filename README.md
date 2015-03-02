@@ -1,14 +1,31 @@
-# developer.github.com
+# LFE Docs Site, v2
 
-This is a GitHub API resource built with [nanoc][nanoc].
-
-All submissions are welcome. To submit a change, fork this repo, commit your changes, and send us a [pull request](http://help.github.com/send-pull-requests/).
+This repository holds the code and content for the second version of the LFE
+Documentation site. It was originally forked from the
+[repository](https://github.com/lfe/docs2) for the
+[Github Developer site](https://developer.github.com/).
 
 ## Setup
 
-Ruby 1.9 is required to build the site.
+Ruby 1.9 is required to build the site:
 
-Get the nanoc gem, plus kramdown for Markdown parsing:
+```bash
+$ brew update
+$ curl -L https://get.rvm.io | bash -s stable
+$ rvm pkg install readline
+$ rvm install 1.9.3 --with-readline-dir=${HOME:-~}/.rvm/usr
+```
+
+Then wait while ``rvm`` chews through your monthly energy budget, compiling the
+needed bits. Once it installs, activate it with the following:
+
+```bash
+$ bash --login
+$ rvm use 1.9.3
+```
+
+Once you have that crusty version of Ruby installed and
+activated, get the nanoc gem, plus kramdown for Markdown parsing:
 
 ```sh
 $ bundle install
@@ -20,7 +37,9 @@ You can see the available commands with nanoc:
 $ bundle exec nanoc -h
 ```
 
-Nanoc has [some nice documentation](http://nanoc.ws/docs/tutorial/) to get you started.  Though if you're mainly concerned with editing or adding content, you won't need to know much about nanoc.
+Nanoc has [some nice documentation](http://nanoc.ws/docs/tutorial/) to get you
+started.  Though if you're mainly concerned with editing or adding content, you
+won't need to know much about nanoc.
 
 [nanoc]: http://nanoc.ws/
 
