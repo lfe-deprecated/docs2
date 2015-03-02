@@ -1,23 +1,17 @@
 ---
-title: GitHub Developer
+title:  LFE Documentation
 layout: overview
 ---
 
 <div class="wrapper feature">
   <h1>
-    Leverage the power of<br />
-    GitHub in your app.
+    Taking the syntax out of<br />
+    Distributed Systems<br />
+    Programming
   </h1>
   <p class="intro">Get started with one of our guides, or jump straight into the API documentation.</p>
   <a href="/v3/" class="button">Browse the documentation</a>
   <img src="/images/rocketship.png" class="rocketship" alt="Rocketship" />
-</div>
-
-<div class="full-width dev-program-callout">
-  <div class="wrapper">
-    <h2>Join the GitHub Developer Program.</h2>
-    <p>The best way to integrate with GitHub. <a href="/program/">Learn more</a>.</p>
-  </div>
 </div>
 
 <div class="full-width-divider">
