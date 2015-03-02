@@ -41,6 +41,7 @@ The new site aims to address these points. The following tickets are actively be
  * [Sketch out the IA for a docs site overhaul](https://github.com/lfe/docs/issues/49)
  * [Figure out versioning for docs](https://github.com/lfe/docs/issues/38)
  * [Identify good examples of API documentation](https://github.com/lfe/docs/issues/37)
+ * [Re-style new docs2 site](https://github.com/lfe/docs/issues/50)
  * Related minor tickets:
    * [Add useful context at the top of the docs page](https://github.com/lfe/docs/issues/41)
    * [Update "Contributing" Section with New Dev On-Boarding](https://github.com/lfe/docs/issues/32)
