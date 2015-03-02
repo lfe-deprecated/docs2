@@ -11,7 +11,8 @@ about their developer site which provides some insight into their process.
 ## Table of Contents
 
 * [Background](#background-)
-* [Migration Plan](#migration-plan-)
+  * [Work Items](#work-items-)
+  * [Migration Plan](#migration-plan-)
 * [Contributing to the Docs](#contributing-to-the-docs-)
   * [Getting Set Up](#getting-set-up-)
   * [Organization](#organization-)
@@ -37,6 +38,8 @@ The existing LFE documentation site has limitations that ultimately prevent it f
  * Jekyll doesn't offer a way of providing versioned content (e.g., API/release versions)
  * This is an opportunity to identify a project which has succeeded in this particular domain, and build upon their success -- [Github's developer site](https://developer.github.com/v3/) is a prime example of this sort of success.
 
+### Work Items [&#x219F;](#table-of-contents)
+
 The new site aims to address these points. The following tickets are actively being incorporated into the "docs2" work:
  * [Sketch out the IA for a docs site overhaul](https://github.com/lfe/docs/issues/49)
  * [Figure out versioning for docs](https://github.com/lfe/docs/issues/38)
@@ -48,7 +51,7 @@ The new site aims to address these points. The following tickets are actively be
    * [Add more resources in the "Erlang" section](https://github.com/lfe/docs/issues/26)
    * [Add style guide links in "Contributing" page](https://github.com/lfe/docs/issues/24)
 
-## Migration Plan [&#x219F;](#table-of-contents)
+### Migration Plan [&#x219F;](#table-of-contents)
 
 Once the issues above are determined to be positively solved by this experimental work, we'll start transitioning content from the old docs to the new. When everything looks good, and folks are happy, we'll do the DNS dance.
 
