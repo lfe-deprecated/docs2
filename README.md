@@ -125,7 +125,7 @@ Ruby 1.9 is required to build the site:
 ```bash
 $ brew update
 $ curl -L https://get.rvm.io | bash -s stable
-$ rvm pkg install readline
+$ rvm install readline
 $ rvm install 1.9.3 --with-readline-dir=${HOME:-~}/.rvm/usr
 ```
 
