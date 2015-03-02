@@ -57,7 +57,7 @@ See the section [Static Site Generator](#static-site-generator-) below.
 
 ### Organization [&#x219F;](#table-of-contents)
 
-TBD
+For now, see the issue [Sketch out the IA for a docs site overhaul](https://github.com/lfe/docs/issues/49).
 
 ### Style Guide [&#x219F;](#table-of-contents)
 
