@@ -3,7 +3,9 @@
 This repository holds the code and content for the second version of the LFE
 Documentation site. It was originally forked from the
 [repository](https://github.com/lfe/docs2) for the
-[Github Developer site](https://developer.github.com/).
+[Github Developer site](https://developer.github.com/). They wrote a
+[blog post](https://github.com/blog/1939-how-github-uses-github-to-document-github)
+about their developer site which provides some insight into their process.
 
 
 ## Table of Contents
