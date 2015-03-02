@@ -138,9 +138,22 @@ $ rvm use 1.9.3
 ```
 
 Once you have that crusty version of Ruby installed and
-activated, get the nanoc gem, plus kramdown for Markdown parsing:
+activated, update the activated gems and then get everything
+else needed to generate the static site:
 
 ```sh
+$ gem install rubygems-update
+$ update_rubygems
+$ gem update --system
+$ bundle install
+```
+
+If you get the "libxml2 + nokogiri" issue, try this:
+
+```sh
+$ brew install libxml2
+$ bundle config build.nokogiri \
+    "--use-system-libraries --with-xml2-include=/usr/local/opt/libxml2/include/libxml2"
 $ bundle install
 ```
 
@@ -191,14 +204,19 @@ $ bundle exec nanoc view
 $ open http://localhost:3000
 ```
 
-Compilation times got you down?  Use `autocompile`!
+These two are so useful (and too long to type) that they are combined into a single ``make`` target, so you may simple do this:
+
+```sh
+$ make rebuild
+```
+
+nanoc does offer an "autocompile" feature, but it runs painfully slowly:
 
 ```sh
 $ bundle exec nanoc autocompile
 ```
 
-This starts a web server too, so there's no need to run `nanoc view`.
-One thing: remember to add trailing slashes to all nanoc links!
+Since that also starts a web server, there's no need to run `nanoc view`.
 
 ### Deployment [&#x219F;](#table-of-contents)
 
