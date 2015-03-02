@@ -6,8 +6,8 @@
 
 body {
   font: 13px/1.4em "Helvetica Neue", arial,freesans,clean,sans-serif;
-  background-color: #fff;
-  color: #393939;
+  background-color: #252525;
+  color: #ccc;
 }
 
 p {
@@ -19,6 +19,7 @@ h1 {
   padding: .5em 0;
   margin: 2em 0 1em;
   font-weight: normal;
+  color: #ffcc00;
 }
 
 body:not(.enterprise) .enterprise-only {
@@ -67,7 +68,7 @@ h1 .header-anchor {
 
 h2 {
   font-size: 22px;
-  color: #333;
+  color: #99bf17;
   margin: 2em auto 1em;
   position: relative;
   font-weight: 300;
@@ -108,22 +109,24 @@ h2 {
 }
 
 h2 span.step {
-  color: #666;
+  color: #99bf17;
 }
 
 h3 {
   font-size: 14px;
-  color: #333;
+  color: #85a614;
   margin: 1.5em 0 .5em;
   position: relative;
 }
 
 h4 {
   margin: 1em 0;
+  color: #708c11;
   position: relative;
 }
 
 h5 {
+  color: #5c730e;
   font-size: 13px;
 }
 
@@ -133,13 +136,14 @@ h6 {
 }
 
 a {
-  color: #4183C4;
+  color: #ffcc00;
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  text-decoration:underline;
+    text-decoration:underline;
+    color: #ffeb9b;
 }
 
 blockquote {
@@ -224,7 +228,7 @@ a img {
   float: left;
   margin-top: 17px;
   display: inline-block;
-  width: 186px;
+  width: 216px;
   height: 27px;
   background: url(/images/logo_developer.png) 0 0 no-repeat;
   text-indent: -999em;
@@ -561,7 +565,7 @@ a img {
 
 .full-width-divider {
   width: 100%;
-  background: #f2f2f2;
+  background: #505050;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   overflow: hidden;
@@ -1201,6 +1205,10 @@ p code {
 code {
   white-space: nowrap;
   font: 12px Consolas, 'Liberation Mono', Courier, monospace;
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color: #efefef;
+  margin: 0;
+  padding: 0;
 }
 
 pre code {white-space: pre;}
@@ -1214,6 +1222,28 @@ pre {
   background-color: #fafafb;
   color: #393939;
   margin: 2em 0;
+  padding: 8px 15px;
+  background-color: #191919;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+pre code {
+  color: #efefef;
+  text-shadow: 0px 1px 0px #000;
+  margin: 0;
+  padding: 0;
 }
 
 ul + pre {
