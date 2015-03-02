@@ -70,31 +70,25 @@ For now, see the issue [Sketch out the IA for a docs site overhaul](https://gith
 Not sure how to structure the docs?  Here's what the structure of the
 API docs should look like:
 
-    # API title
+    # Document Title
 
     * TOC
     {:toc}
 
-    ## API endpoint title
+    ## Section Name
 
-        [VERB] /path/to/endpoint
+    [introductory text]
 
-    ### Parameters
+    ### Subsection 1
 
-    Name | Type | Description
-    -----|------|--------------
-    `name`|`type` | Description.
+    [detailed text]
 
-    ### Input (request JSON body)
+    ### Subsection 2
 
-    Name | Type | Description
-    -----|------|--------------
-    `name`|`type` | Description.
+    [detailed text]
+    
+    ...
 
-    ### Response
-
-    <%= headers 200, :pagination => default_pagination_rels, 'X-Custom-Header' => "value" %>
-    <%= json :resource_name %>
 
 **Note**: We're using [Kramdown Markdown extensions](http://kramdown.gettalong.org/syntax.html), such as definition lists.
 
