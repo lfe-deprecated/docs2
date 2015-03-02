@@ -9,6 +9,7 @@ Documentation site. It was originally forked from the
 ## Table of Contents
 
 * [Background](#background-)
+* [Migration Plan](#migration-plan-)
 * [Contributing to the Docs](#contributing-to-the-docs-)
   * [Getting Set Up](#getting-set-up-)
   * [Organization](#organization-)
@@ -44,7 +45,7 @@ The new site aims to address these points. The following tickets are actively be
    * [Add more resources in the "Erlang" section](https://github.com/lfe/docs/issues/26)
    * [Add style guide links in "Contributing" page](https://github.com/lfe/docs/issues/24)
 
-## Migration Plan
+## Migration Plan [&#x219F;](#table-of-contents)
 
 Once the issues above are determined to be positively solved by this experimental work, we'll start transitioning content from the old docs to the new. When everything looks good, and folks are happy, we'll do the DNS dance.
 
