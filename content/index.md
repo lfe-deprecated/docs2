@@ -9,7 +9,7 @@ layout: overview
     Distributed Systems<br />
     Programming
   </h1>
-  <p class="intro">Get started with one of our guides, or jump straight into the API documentation.</p>
+  <p class="intro">Start learning LFE, sharpen your pattern-matching skills, or refresh your memory.</p>
   <a href="/v3/" class="button">Browse the documentation</a>
   <img src="/images/rocketship.png" class="rocketship" alt="Rocketship" />
 </div>
