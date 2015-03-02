@@ -14,8 +14,6 @@ Documentation site. It was originally forked from the
   * [Style Guide](#style-guide-)
     * [Terminal Blocks](#terminal-blocks-)
   * [Versioning Docs](#versioning-docs-)
-* [EUnit Compatibility](#eunit-compatibility-)
-* [Features](#features-)
 * [Static Site Generator](#static-site-generator-)
   * [Setup](#setup-)
   * [Development](#development-)
@@ -26,7 +24,7 @@ Documentation site. It was originally forked from the
 
 ### Getting Set Up [&#x219F;](#table-of-contents)
 
-See the section "Static Site Generator" below.
+See the section [Static Site Generator](#static-site-generator-) below.
 
 ### Organization [&#x219F;](#table-of-contents)
 
