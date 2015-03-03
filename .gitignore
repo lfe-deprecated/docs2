@@ -9,3 +9,4 @@ crash.log
 /.bundle/
 static/search-index.json
 *.sw[po]
+*.xcf
