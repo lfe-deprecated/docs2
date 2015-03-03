@@ -146,6 +146,11 @@ a:active {
     color: #ffeb9b;
 }
 
+h2 a:hover,
+h2 a:active {
+    text-decoration:none;
+    color: #ffeb9b;
+}
 blockquote {
   margin:0 -5px;
   padding: 0px 20px;
@@ -238,7 +243,7 @@ a img {
   float: right;
   font-weight: bold;
   margin-top: 20px;
-  text-shadow: white 1px 1px 0px;
+  text-shadow: #888 1px 1px 0px;
   font-size: 14px;
 }
 
@@ -250,7 +255,7 @@ a img {
 }
 
 #header .nav a {
-  color: #515151;
+  color: #444;
   outline: none;
   text-decoration: none;
   padding: 20px 11px 19px;
@@ -268,7 +273,7 @@ a img {
 }
 
 #header .nav a:hover {
-  color: #327fc7;
+  color: #ffcc00;
 }
 
 /** Search **/
@@ -565,9 +570,9 @@ a img {
 
 .full-width-divider {
   width: 100%;
-  background: #505050;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  background: #333;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
   overflow: hidden;
   z-index: 1;
   position: relative;
@@ -816,7 +821,7 @@ a .mega-octicon {
 }
 
 .lower_footer {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #111;
   padding: 30px 0;
 }
 
@@ -849,7 +854,7 @@ a .mega-octicon {
 }
 
 #footer .wrapper {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #111;
   text-align: center;
   padding: 20px 0;
 }
