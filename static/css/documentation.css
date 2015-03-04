@@ -1228,9 +1228,9 @@ pre {
   font: 12px/1.4em Consolas, 'Liberation Mono', Courier, monospace;
   padding: 10px;
   color: #efefef;
+  background-color: #191919;
   margin: 2em 0;
   padding: 8px 15px;
-  background-color: #191919;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
@@ -1248,9 +1248,11 @@ pre {
 
 pre code {
   color: #efefef;
+  background-color: #191919;
   text-shadow: 0px 1px 0px #000;
   margin: 0;
   padding: 0;
+  
 }
 
 ul + pre {
@@ -1259,17 +1261,17 @@ ul + pre {
 
 pre span.comment {color: #aaa;}
 
-.headers {
+.headers, .headers code {
   margin-bottom: 0;
   border-radius: 3px 3px;
-  border-bottom: 1px solid #CACACA;
-  background-color: #f4f4f4;
+  border: none;
+  background-color: #1d1d1d;
 }
 
 .headers + pre {
   border-radius: 0 0 3px 3px;
   margin-top: 0;
-  border-top-color: #ddd;
+  border-top-color: #111;
 }
 
 .headers + pre.body-response {
@@ -1342,7 +1344,7 @@ pre span.comment {color: #aaa;}
   color: #ccc;
   border: 1px solid #111;
   border-radius: 5px;
-  background-color: rgba(255, 145, 0, 0.2;
+  background-color: rgba(255, 145, 0, 0.2);
 }
 
 .warning {
@@ -1351,7 +1353,7 @@ pre span.comment {color: #aaa;}
   color: #ccc;
   border: 1px solid #111;
   border-radius: 5px;
-  background-color: rgba(255, 0, 0, 0.2;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 /*------------------------------------------------------------------------------
