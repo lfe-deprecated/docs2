@@ -1339,19 +1339,19 @@ pre span.comment {color: #aaa;}
 .alert {
   position:relative;
   padding: 0 15px;
-  color: #222;
-  border: 1px solid #222;
-  border-radius: 3px;
-  background-color: #e80;
+  color: #ccc;
+  border: 1px solid #111;
+  border-radius: 5px;
+  background-color: rgba(255, 145, 0, 0.2;
 }
 
 .warning {
   position:relative;
   padding: 0 15px;
-  color: #613A00;
-  border: 1px solid #dca874;
-  border-radius: 3px;
-  background-color: #ffe3c8;
+  color: #ccc;
+  border: 1px solid #111;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.2;
 }
 
 /*------------------------------------------------------------------------------
