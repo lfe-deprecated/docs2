@@ -218,4 +218,8 @@ Since that also starts a web server, there's no need to run `nanoc view`.
 ```sh
 $ bundle exec rake publish
 ```
+or
+```sh
+$ make publish
+```
 
