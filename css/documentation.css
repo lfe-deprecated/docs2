@@ -1339,10 +1339,10 @@ pre span.comment {color: #aaa;}
 .alert {
   position:relative;
   padding: 0 15px;
-  color: #264c72;
-  border: 1px solid #97c1da;
+  color: #222;
+  border: 1px solid #222;
   border-radius: 3px;
-  background-color: #d8ebf8;
+  background-color: #e80;
 }
 
 .warning {
